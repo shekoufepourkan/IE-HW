@@ -1,0 +1,61 @@
+<!--BLoomen Rechner -->
+<html>
+    <head>
+        <title>BLoomen Rechner</title>
+        <link rel="stylesheet" type="" href="style.css">
+        <script type="text/javascript" src="BloomCalc.js"></script>
+    </head>
+    <body background="BgCount.png">
+        <table>
+            <!--Header-Bereich-->
+            <tr>
+                <tr class="Header">
+                    <td>BLoomen Rechner</td>
+                </tr>
+
+                <td>
+                    <input id="input" type="text" placeholder="0" readonly="readonly"  >
+                    <input id="answer" type="text" style="color: darkgreen;" readonly="readonly"  >
+                </td>
+            </tr>
+            <!-- Buttons-Bereich-->
+            <tr>
+                <td>
+                    <input value=" AC " type="button" onclick="Klar()" style=" background:red;color: white;">
+                    <input value=" &#8592 " type="button" onclick="backspace()" style="color: red;">
+                    <input value=" &#247 " type="button" onclick="Betrieb('/')">
+                    <input value=" x " type="button" onclick="Betrieb('x')">
+                    
+                    <br>
+
+
+
+                    <input value=" 1 " type="button" onclick="NummerHolen(1)">
+                    <input value=" 2 " type="button" onclick="NummerHolen(2)">
+                    <input value=" 3 " type="button" onclick="NummerHolen(3)">
+                    <input value=" + " type="button" onclick="Betrieb('+')">
+                    <br>
+
+                    <input value=" 4 " type="button" onclick="NummerHolen(4)">
+                    <input value=" 5 " type="button" onclick="NummerHolen(5)">
+                    <input value=" 6 " type="button" onclick="NummerHolen(6)">
+                    <input value=" - " type="button" onclick="Betrieb('-')">
+                    <br>
+
+                    <input value=" 7 " type="button" onclick="NummerHolen(7)">
+                    <input value=" 8 " type="button" onclick="NummerHolen(8)">
+                    <input value=" 9 " type="button" onclick="NummerHolen(9)">
+                    <input value=" () " type="button" onclick="Klammern()">
+                    <br>
+
+                    <input value=" 0 " type="button" onclick="NummerHolen(0)">
+                    <input  value="."  type="button"  onclick="inputDecimal()">
+                    <input value=" = " type="button" onclick="Berechnen()" style=" width: 126px; color:beige; background:green">
+                    <br>
+
+                </td>
+            </td>
+
+        </table>
+    </body>
+</html>
